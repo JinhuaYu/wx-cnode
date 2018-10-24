@@ -1,0 +1,72 @@
+/* pages/index/index.wxss */
+
+.tag{
+  display: inline-block;
+  font-size: 12px;
+  padding: 2px 4px;
+  vertical-align: middle;  
+  color: #fff;
+  border-radius: 2px;  
+}
+
+.tag.tag-success{
+  background: #80bd01;
+}
+
+
+.tab {
+  display: flex;
+}
+.tab navigator {
+  padding: 10px 0;    
+  display: inline-block;
+  text-align: center;
+  flex-grow: 1;
+  font-size: 14px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.topic-item{
+  padding: 10px;
+  overflow: hidden;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.topic-item .avatar{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  float: left;
+  vertical-align: middle;    
+}
+
+.topic-item .item-info {
+  margin-left: 60px;  
+}
+
+.topic-item .item-info .author{
+  font-size: 12px;
+}
+
+.topic-item .item-info .author .time{
+  float: right;
+  color: #999;
+}
+
+.topic-item .item-info .title{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+  margin: 4px 0;
+}
+.topic-item .item-info .title .tag{
+  margin-right: 4px;
+}
+.topic-item .item-info .title .h4{
+  font-size: 14px;
+}
+
+.topic-item .item-info .meta{
+  font-size: 12px;
+  color: #999;
+}

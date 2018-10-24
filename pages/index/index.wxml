@@ -1,0 +1,29 @@
+<!--pages/index/index.wxml-->
+<view class='container'>
+  <view class='tab'>
+    <navigator wx:key='{{index}}' wx:for="{{tabList}}" url="/?tab={{item.tab}}">{{item.name}}</navigator>
+  </view>
+
+  <view class='topic-list'>
+
+    <block wx:for='{{topicsList}}' wx:key="{{item.id}}">
+      <view class='topic-item'>
+        <image class='avatar' src='{{item.author.avatar_url}}'></image>     
+        <view class='item-info'>        
+          <view class='author'>
+            <text  class='name'>{{item.author.loginname}}</text>
+            <text class='time'>17小时</text>
+          </view>
+          <view class='title'>
+            <text class='tag tag-success'>{{item.good}}</text>
+            <text class='h4'>{{item.title}}</text>
+          </view>
+          <view class='meta'>
+            <text class='reply'>{{item.reply_count}}</text> / <text class='views'>{{item.visit_count}}</text>
+          </view>
+        </view>
+      </view>
+    </block>
+
+  </view>
+</view>
